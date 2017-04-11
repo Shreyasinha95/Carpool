@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team43.carpool.MyProfile">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Name"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter your Name"
+        android:ems="10"
+        android:id="@+id/enterName"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Mobile No."
+        android:textSize="20dp"
+        android:layout_below="@id/name"
+        android:id="@+id/mobNo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter your Mobile Number"
+        android:ems="10"
+        android:id="@+id/enterMobNo"
+        android:layout_below="@id/enterName"
+        android:layout_alignBottom="@+id/mobNo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Email-Id"
+        android:textSize="20dp"
+        android:layout_below="@id/mobNo"
+        android:id="@+id/emailId" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter your Email-Id"
+        android:ems="10"
+        android:id="@+id/enterEmailId"
+        android:layout_below="@id/enterMobNo"
+        android:layout_alignBottom="@+id/emailId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rider"
+        android:id="@+id/rider"
+        android:padding="10dp"
+        android:textSize="22dp"
+        android:layout_below="@+id/emailId"
+        android:layout_alignRight="@+id/mobNo"
+        android:layout_alignEnd="@+id/mobNo" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver"
+        android:id="@+id/driver"
+        android:padding="10dp"
+        android:textSize="22dp"
+        android:layout_below="@+id/rider"
+        android:layout_alignLeft="@+id/rider"
+        android:layout_alignStart="@+id/rider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Vehicle No."
+            android:id="@+id/vehicle"
+            android:layout_alignBottom="@+id/enterVehicle"
+            android:layout_toLeftOf="@+id/enterEmailId"
+            android:layout_toStartOf="@+id/enterEmailId" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterVehicle"
+        android:hint="Enter your Vehicle No.-"
+        android:layout_below="@+id/driver"
+        android:layout_alignRight="@+id/enterEmailId"
+        android:layout_alignEnd="@+id/enterEmailId" />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:text="Aadhar Card"
+    android:id="@+id/aadhar"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/vehicle"
+        android:layout_alignLeft="@+id/vehicle"
+        android:layout_alignStart="@+id/vehicle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Driving License"
+        android:id="@+id/dl"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/aadhar"
+        android:layout_alignLeft="@+id/aadhar"
+        android:layout_alignStart="@+id/aadhar" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload AC"
+        android:id="@+id/ac"
+        android:layout_above="@+id/dl"
+        android:layout_alignRight="@+id/enterVehicle"
+        android:layout_alignEnd="@+id/enterVehicle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload DL"
+        android:id="@+id/uploadDl"
+        android:layout_alignBottom="@+id/dl"
+        android:layout_alignRight="@+id/ac"
+        android:layout_alignEnd="@+id/ac" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:id="@+id/verify"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showac"
+        android:layout_alignTop="@+id/aadhar"
+        android:layout_alignLeft="@+id/uploadDl"
+        android:layout_alignStart="@+id/uploadDl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showdl"
+        android:layout_alignBottom="@+id/dl"
+        android:layout_alignLeft="@+id/ac"
+        android:layout_alignStart="@+id/ac" />
+
+</RelativeLayout>
